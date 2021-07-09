@@ -1,0 +1,11 @@
+<mapper namespase = "user">
+
+    <!-- sql 的唯一标识：namespase.id来组成 ：statementId -->
+    <select id = "selectList" resultType = "com.lgstudy.pojo.User">
+        select * from user
+    </select>
+
+    <select id = "selectOne" resultType = "com.lgstudy.pojo.User" parameterType = "com.lgstudy.pojo.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+</mapper>
