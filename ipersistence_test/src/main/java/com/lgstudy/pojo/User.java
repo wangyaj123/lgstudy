@@ -4,6 +4,11 @@ public class User {
     private Integer id;
     private String username;
 
+    public User(int id, String username) {
+        this.id = id;
+        this.username = username;
+    }
+
     public Integer getId() {
         return id;
     }

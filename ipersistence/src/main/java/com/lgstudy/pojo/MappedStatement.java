@@ -7,6 +7,8 @@ public class MappedStatement {
     private String resultType;
     //参数类型
     private String parameterType;
+    //
+    private String sql;
 
     public String getId() {
         return id;
@@ -30,5 +32,13 @@ public class MappedStatement {
 
     public void setParameterType(String parameterType) {
         this.parameterType = parameterType;
+    }
+
+    public String getSql() {
+        return sql;
+    }
+
+    public void setSql(String sql) {
+        this.sql = sql;
     }
 }
