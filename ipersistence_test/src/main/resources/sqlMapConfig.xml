@@ -1,9 +1,9 @@
 <configuration>
     <datasource>
         <property name ="driverClass" value = "com.mysql.jdbc.Driver"></property>
-        <property name ="jdbcUrl" value = "jdbc:mysql://localhost:3306/test"></property>
+        <property name ="jdbcUrl" value = "jdbc:mysql://localhost:3306/lgstudy"></property>
         <property name ="username" value = "root"></property>
-        <property name ="password" value = "root"></property>
+        <property name ="password" value = "lovez"></property>
     </datasource>
 <!--    存放mapper.xml 的全路径-->
     <mapper resource = "UserMapper.xml"></mapper>

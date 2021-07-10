@@ -8,8 +8,9 @@ public class Resources {
      * @param path
      * @return
      */
-    public static InputStream getResourceAsStream(String path){
+    public static InputStream getResourceAsSteam(String path){
+        InputStream resourceAsStream = Resources.class.getClassLoader().getResourceAsStream(path);
+        return  resourceAsStream;
 
-        return Resources.class.getClassLoader().getResourceAsStream(path);
     }
 }

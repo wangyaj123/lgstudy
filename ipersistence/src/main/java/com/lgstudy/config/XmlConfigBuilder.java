@@ -43,7 +43,7 @@ public class XmlConfigBuilder {
         List<Element> mapperList = rootElement.selectNodes("//mapper");
         for (Element element : mapperList) {
             String path = element.attributeValue("resource");
-            InputStream resourceAsStream = Resources.getResourceAsStream(path);
+            InputStream resourceAsStream = Resources.getResourceAsSteam(path);
             XmlMapperBuilder xmlMapperBuilder = new XmlMapperBuilder(configuration);
             xmlMapperBuilder.parse(resourceAsStream);
         }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface SqlSession {
     //查询所有
-     <E> List<E> selectList(String statementId, Object... params) throws SQLException;
+     <E> List<E> selectList(String statementId, Object... params) throws Exception;
     //查询一个
-    <T> T selectOne(String statementId, Object... params) throws SQLException;
+    <T> T selectOne(String statementId, Object... params) throws Exception;
 }

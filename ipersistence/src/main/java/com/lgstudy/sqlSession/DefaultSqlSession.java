@@ -13,13 +13,13 @@ public class DefaultSqlSession implements SqlSession {
         this.configuration = configuration;
     }
 
-    public <E> List<E> selectList(String statementId, Object... params) throws SQLException {
+    public <E> List<E> selectList(String statementId, Object... params) throws Exception {
         //将要区完成对simpleExecutor里的query方法的调用
         SimpleExecutor simpleExecutor = new SimpleExecutor();
         return simpleExecutor.query(configuration, configuration.getMappedStatementMap().get(statementId), params);
     }
 
-    public <T> T selectOne(String statementId, Object... params) throws SQLException {
+    public <T> T selectOne(String statementId, Object... params) throws Exception {
         List<Object> objects = selectList(statementId, params);
         if (objects.size() == 1){
             return (T) objects.get(0);
