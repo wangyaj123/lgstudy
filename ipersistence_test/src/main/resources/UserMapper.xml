@@ -1,4 +1,4 @@
-<mapper namespase = "user">
+<mapper namespase = "com.lgstudy.dao.IUserDao">
 
     <!-- sql 的唯一标识：namespase.id来组成 ：statementId -->
     <select id = "selectList" resultType = "com.lgstudy.pojo.User">
